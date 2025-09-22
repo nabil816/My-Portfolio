@@ -1,0 +1,245 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Retail Reporting Automation Project</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700;800&display=swap" rel="stylesheet">
+    <style>
+        body {
+            font-family: 'Inter', sans-serif;
+        }
+        .chart-container {
+            position: relative;
+            width: 100%;
+            max-width: 500px;
+            margin-left: auto;
+            margin-right: auto;
+            height: 300px;
+            max-height: 350px;
+        }
+        @media (min-width: 768px) {
+            .chart-container {
+                height: 350px;
+            }
+        }
+        .flow-arrow {
+            font-size: 3rem;
+            color: #89A9D3;
+            line-height: 1;
+        }
+        .kpi-card {
+            background-color: white;
+            border-radius: 0.75rem;
+            padding: 2rem;
+            box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.05), 0 4px 6px -2px rgba(0, 0, 0, 0.05);
+            border: 1px solid #e5e7eb;
+        }
+    </style>
+</head>
+<body class="bg-gray-50 text-gray-700">
+
+    <div class="container mx-auto p-4 md:p-8 max-w-6xl">
+
+        <header class="text-center mb-16">
+            <h1 class="text-4xl md:text-5xl font-extrabold text-[#00449E] mb-3">Automating Business Intelligence for a Retail Company</h1>
+            <p class="text-lg md:text-xl text-[#5386C3] font-semibold">Transforming Manual Reporting into an Instant, Data-Driven Engine</p>
+        </header>
+
+        <section id="the-problem" class="mb-16">
+            <h2 class="text-3xl font-bold text-center text-[#00449E] mb-8">The Challenge: A Manual & Time-Consuming Process</h2>
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-8 items-center">
+                <div class="kpi-card text-center">
+                    <div class="text-6xl font-bold text-[#FF6B6B]">3+ Hours</div>
+                    <div class="text-xl font-semibold mt-2 text-[#00449E]">For a Single Daily Report</div>
+                    <p class="text-gray-600 mt-2">The Finance Department spent hours every day manually compiling sales data in Excel.</p>
+                </div>
+                <div class="space-y-4">
+                    <div class="flex items-center">
+                        <div class="text-2xl mr-4">❌</div>
+                        <p><strong>High Risk of Human Error:</strong> Manual data entry and copy-pasting led to frequent inconsistencies.</p>
+                    </div>
+                     <div class="flex items-center">
+                        <div class="text-2xl mr-4">⏳</div>
+                        <p><strong>Delayed Insights:</strong> Critical sales information was often outdated by the time it was delivered.</p>
+                    </div>
+                     <div class="flex items-center">
+                        <div class="text-2xl mr-4">📉</div>
+                        <p><strong>Lack of Deep Analysis:</strong> The team had no time for strategic analysis; their entire focus was on manual data compilation.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="the-solution" class="mb-16">
+            <h2 class="text-3xl font-bold text-center text-[#00449E] mb-10">The Solution: An Automated Python Workflow</h2>
+            <p class="text-center text-gray-600 max-w-3xl mx-auto mb-10">I developed a suite of Python scripts using Jupyter Notebooks to create a robust, end-to-end automation pipeline. This system connects directly to the raw data, performs all transformations, and generates a variety of both operational and strategic reports instantly.</p>
+            <div class="flex flex-col md:flex-row items-center justify-center text-center space-y-4 md:space-y-0 md:space-x-6">
+                <div class="p-6 bg-white rounded-lg shadow-md border w-full md:w-1/4">
+                    <div class="text-4xl">📄</div>
+                    <div class="text-xl font-semibold mt-2">1. Data Extraction</div>
+                    <div class="text-sm text-gray-600 mt-1">Connects to raw Excel exports from the Odoo ERP system.</div>
+                </div>
+                <div class="flow-arrow hidden md:block">→</div>
+                 <div class="p-6 bg-white rounded-lg shadow-md border w-full md:w-1/4">
+                    <div class="text-4xl">✨</div>
+                    <div class="text-xl font-semibold mt-2">2. Data Processing</div>
+                    <div class="text-sm text-gray-600 mt-1">Cleans, transforms, and structures the data using Pandas.</div>
+                </div>
+                <div class="flow-arrow hidden md:block">→</div>
+                <div class="p-6 bg-white rounded-lg shadow-md border w-full md:w-1/4">
+                    <div class="text-4xl">🧠</div>
+                    <div class="text-xl font-semibold mt-2">3. Analysis & Modeling</div>
+                    <div class="text-sm text-gray-600 mt-1">Performs deep-dive analysis, segmentation, and market basket modeling.</div>
+                </div>
+                <div class="flow-arrow hidden md:block">→</div>
+                <div class="p-6 bg-white rounded-lg shadow-md border w-full md:w-1/4">
+                    <div class="text-4xl">📊</div>
+                    <div class="text-xl font-semibold mt-2">4. Report Generation</div>
+                    <div class="text-sm text-gray-600 mt-1">Exports clean, formatted Excel reports and analyses.</div>
+                </div>
+            </div>
+        </section>
+
+        <section id="the-impact" class="mb-16 bg-white rounded-lg shadow-lg p-8">
+            <h2 class="text-3xl font-bold text-center text-[#00449E] mb-10">The Impact: From Hours to Seconds</h2>
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-8 items-center">
+                <div>
+                     <h3 class="text-2xl font-semibold text-gray-800 mb-4">Unlocking Efficiency and Strategic Value</h3>
+                     <p class="text-gray-600 mb-6">The automation scripts completely revolutionized the reporting process by delivering massive time savings and enabling deeper, more strategic business analysis for multiple departments.</p>
+                     <ul class="space-y-4">
+                         <li class="flex items-start">
+                             <div class="text-green-500 font-bold text-xl mr-3">✓</div>
+                             <div><strong>Accuracy Guaranteed:</strong> Eliminated human error, providing a single source of truth for business performance.</div>
+                         </li>
+                         <li class="flex items-start">
+                              <div class="text-green-500 font-bold text-xl mr-3">✓</div>
+                             <div><strong>Real-Time Insights:</strong> Reports are now available on-demand, allowing for agile and informed decision-making.</div>
+                         </li>
+                         <li class="flex items-start">
+                              <div class="text-green-500 font-bold text-xl mr-3">✓</div>
+                             <div><strong>Empowered Stakeholders with Advanced Insights:</strong> Delivered deep-dive analyses like Market Basket and regional performance reports, enabling data-driven strategy for marketing and sales teams.</div>
+                         </li>
+                     </ul>
+                </div>
+                <div class="chart-container">
+                    <canvas id="timeSavedChart"></canvas>
+                </div>
+            </div>
+        </section>
+
+        <section id="notebooks-overview" class="mb-16">
+            <h2 class="text-3xl font-bold text-center text-[#00449E] mb-10">Types of Reports & Analyses Delivered</h2>
+            <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
+                <div class="bg-white rounded-lg shadow-md p-6">
+                    <h3 class="font-bold text-lg text-[#2565AE]">Operational Reports</h3>
+                    <p class="text-sm text-gray-600 mt-1">Generated daily and monthly reports on sales, salesperson performance, and inventory for the Finance and Sales teams.</p>
+                </div>
+                 <div class="bg-white rounded-lg shadow-md p-6">
+                    <h3 class="font-bold text-lg text-[#2565AE]">Strategic Marketing Analysis</h3>
+                    <p class="text-sm text-gray-600 mt-1">Provided insights on marketing campaign results, customer purchasing patterns, and regional performance to guide strategy.</p>
+                </div>
+                 <div class="bg-white rounded-lg shadow-md p-6">
+                    <h3 class="font-bold text-lg text-[#2565AE]">Market Basket Analysis</h3>
+                    <p class="text-sm text-gray-600 mt-1">Uncovered product associations to inform cross-selling promotions and in-store placement strategies.</p>
+                </div>
+            </div>
+        </section>
+
+        <footer class="text-center mt-12 pt-8 border-t border-gray-200">
+            <p class="text-gray-600">This project demonstrates a practical, high-impact application of Python for business intelligence automation and advanced analytics.</p>
+        </footer>
+
+    </div>
+
+    <script>
+        document.addEventListener('DOMContentLoaded', () => {
+
+            const brilliantBlues = ['#00449E', '#5386C3'];
+            const defaultFontColor = '#374151';
+
+            Chart.defaults.font.family = "'Inter', sans-serif";
+            Chart.defaults.color = defaultFontColor;
+            Chart.defaults.plugins.legend.display = false;
+
+            const tooltipTitleCallback = {
+                plugins: {
+                    tooltip: {
+                        callbacks: {
+                            title: function(tooltipItems) {
+                                const item = tooltipItems[0];
+                                let label = item.chart.data.labels[item.dataIndex];
+                                if (Array.isArray(label)) {
+                                  return label.join(' ');
+                                } else {
+                                  return label;
+                                }
+                            }
+                        }
+                    }
+                }
+            };
+
+            new Chart(document.getElementById('timeSavedChart'), {
+                type: 'bar',
+                data: {
+                    labels: ['Manual Excel Process', 'Automated Python Script'],
+                    datasets: [{
+                        label: 'Time to Generate Daily Report (minutes)',
+                        data: [180, 0.5],
+                        backgroundColor: ['#FF6B6B', '#2565AE'],
+                        borderColor: '#ffffff',
+                        borderWidth: 2,
+                        borderRadius: 5
+                    }]
+                },
+                options: {
+                    ...tooltipTitleCallback,
+                    maintainAspectRatio: false,
+                    indexAxis: 'y',
+                    scales: {
+                        x: {
+                            beginAtZero: true,
+                            title: {
+                                display: true,
+                                text: 'Time (minutes)',
+                                font: {
+                                    weight: 'bold'
+                                }
+                            }
+                        }
+                    },
+                     plugins: {
+                        ...tooltipTitleCallback.plugins,
+                         tooltip: {
+                            callbacks: {
+                               ...tooltipTitleCallback.plugins.tooltip.callbacks,
+                                label: function(context) {
+                                    let label = context.dataset.label || '';
+                                    if (label) {
+                                        label += ': ';
+                                    }
+                                    if (context.parsed.x !== null) {
+                                        if (context.parsed.x < 1) {
+                                             label += 'Less than 30 seconds';
+                                        } else {
+                                             label += context.parsed.x + ' minutes';
+                                        }
+                                    }
+                                    return label;
+                                }
+                            }
+                        }
+                    }
+                }
+            });
+
+        });
+    </script>
+</body>
+</html>
