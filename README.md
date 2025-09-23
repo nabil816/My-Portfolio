@@ -38,6 +38,13 @@ Designed a dynamic Power BI dashboard to track campaign ROI, customer engagement
   - **Reports/ Links to dashboards**  
 
 ---
+## 📌 Note  
+
+- For **Dashboards**, each project includes a PDF file that explains the project in detail.  
+- At the end of each PDF, you will find a **link to the live dashboard**.  
+- If the link doesn’t work directly, simply download and open the PDF file on your device — the **button inside the PDF will be clickable**, giving you direct access to the dashboard.  
+
+---
 
 ## 📬 Let’s Connect
 
