@@ -35,7 +35,7 @@ Designed a dynamic Power BI dashboard to track campaign ROI, customer engagement
 - Each folder in this repository contains:
   - **Project/folder description for all the project details**  
   - **Code & scripts**  
-  - **Reports/dashboards**  
+  - **Reports/ Links to dashboards**  
 
 ---
 
